@@ -17,7 +17,7 @@ review_collection = db["review"]
 def index():
     return "Welcome to your Flask-MongoDB app!"
 
-@app.route('/review', methods=['POST'])
+"""@app.route('/review', methods=['POST'])
 def add_review():
     # Get JSON data from request body
     data = request.get_json(force=True)
@@ -117,7 +117,7 @@ def search_image():
         return jsonify({'image_url': results['items'][0]['link']})
     else:
         return jsonify({'error': 'No images found for the query'}), 404
-
+"""
 
 if __name__ == '__main__':
     app.run(debug=True)
